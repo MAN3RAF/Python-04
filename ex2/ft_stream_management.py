@@ -1,5 +1,6 @@
 import sys
 
+
 def main():
 	print("=== CYBER ARCHIVES - COMMUNICATION SYSTEM ===\n")
 
