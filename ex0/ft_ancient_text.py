@@ -17,6 +17,7 @@ def main():
 
 		vault.close()
 		print("\nData recovery complete. Storage unit disconnected.")
+	
 	except:
 		print("\nERROR: Storage vault cannot be accessed due to coruption!")
 
