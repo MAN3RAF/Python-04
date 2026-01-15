@@ -22,10 +22,10 @@ def main():
 		
 		print("Vault automatically sealed upon completion")
 
-	with open("secure vault", "w") as  secure_vault:
+	with open("new_discovery.txt", "w") as  secure_vault:
 
-		secure_vault.write(vault_data)
-		secure_vault.write(f"\n{vault_protocols}")
+		secure_vault.write(vault_data + "\n")
+		secure_vault.write(vault_protocols)
 
 	print("\nAll vault operations completed with maximum security.")
 
