@@ -1,33 +1,33 @@
 
 def main():
 
-	print("=== CYBER ARCHIVES - VAULT SECURITY SYSTEM ===\n")
+    print("=== CYBER ARCHIVES - VAULT SECURITY SYSTEM ===\n")
 
-	print("Initiating secure vault access...")
+    print("Initiating secure vault access...")
 
-	with open("classified_data.txt", "r") as vault:
-		print("Vault connection established with failsafe protocols\n")
-		
-		print("SECURE EXTRACTION:")
-		vault_data = vault.read()
-		print(vault_data)
-	
-	with open("security_protocols.txt", "r") as vault:
+    with open("classified_data.txt", "r") as vault:
+        print("Vault connection established with failsafe protocols\n")
 
-		vault_protocols = vault.read()
+        print("SECURE EXTRACTION:")
+        vault_data = vault.read()
+        print(vault_data)
 
-		print("\nSECURE PRESERVATION:")
+    with open("security_protocols.txt", "r") as vault:
 
-		print(vault_protocols)
-		
-		print("Vault automatically sealed upon completion")
+        vault_protocols = vault.read()
 
-	with open("new_discovery.txt", "w") as  secure_vault:
+        print("\nSECURE PRESERVATION:")
 
-		secure_vault.write(vault_data + "\n")
-		secure_vault.write(vault_protocols)
+        print(vault_protocols)
 
-	print("\nAll vault operations completed with maximum security.")
+        print("Vault automatically sealed upon completion")
+
+    with open("new_discovery.txt", "w") as secure_vault:
+
+        secure_vault.write(vault_data + "\n")
+        secure_vault.write(vault_protocols)
+
+    print("\nAll vault operations completed with maximum security.")
 
 
 main()

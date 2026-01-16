@@ -1,25 +1,26 @@
 
+
 def main():
 
-	print("=== CYBER ARCHIVES - DATA RECOVERY SYSTEM ===\n	")
+    print("=== CYBER ARCHIVES - DATA RECOVERY SYSTEM ===\n")
 
-	try:
-		vault_name = "ancient_fragment.txt"
-		print(f"Accessing Storage Vault: {vault_name}")
+    try:
+        vault_name = "ancient_fragment.txt"
+        print(f"Accessing Storage Vault: {vault_name}")
 
-		vault = open(vault_name)
+        vault = open(vault_name)
 
-		print("Connection established...\n")
-	
-		recovered_data = vault.read()
+        print("Connection established...\n")
 
-		print(f"RECOVERED DATA:\n{recovered_data}")
+        recovered_data = vault.read()
 
-		vault.close()
-		print("\nData recovery complete. Storage unit disconnected.")
-	
-	except:
-		print("\nERROR: Storage vault cannot be accessed due to coruption!")
+        print(f"RECOVERED DATA:\n{recovered_data}")
+
+        vault.close()
+        print("\nData recovery complete. Storage unit disconnected.")
+
+    except FileNotFoundError:
+        print("\nERROR: Storage vault cannot be accessed due to coruption!")
 
 
 main()
